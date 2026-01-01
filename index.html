@@ -2,63 +2,102 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
+
 <title>Quản lý vận tải</title>
+
+<!-- FULL SCREEN MOBILE -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="QLVT">
+<meta name="theme-color" content="#0b5fa5">
+
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background: #f2f4f7;
+/* RESET */
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9edf2;
+    color: #222;
+}
+
+/* HEADER GIỐNG QLVT */
 .header {
-    background: #1e63b5;
-    color: white;
-    padding: 15px;
+    background: linear-gradient(to right, #0b5fa5, #0a4e8a);
+    padding: 18px 15px;
     display: flex;
     align-items: center;
 }
+
 .header img {
-    height: 55px;
-    margin-right: 15px;
+    height: 52px;
+    margin-right: 12px;
 }
-.container {
-    max-width: 700px;
-    margin: 20px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
+
+.header h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
 }
-.row {
-    margin: 12px 0;
-    font-size: 16px;
+
+/* KHỐI NỘI DUNG */
+.content {
+    max-width: 920px;
+    margin: 35px auto;
+    padding: 0 20px;
 }
-.label {
+
+/* DÒNG THÔNG TIN */
+.item {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.item strong {
     font-weight: bold;
 }
+
+/* TRẠNG THÁI */
 .status {
-    color: red;
+    color: #d40000;
     font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .item {
+        font-size: 18px;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <!-- HEADER -->
 <div class="header">
     <img src="logo.png" alt="Logo">
-    <h2>QUẢN LÝ VẬN TẢI</h2>
+    <h1>QUẢN LÝ VẬN TẢI</h1>
 </div>
 
 <!-- NỘI DUNG -->
-<div class="container">
-    <div class="row"><span class="label">Số phù hiệu:</span> HD7925009257</div>
-    <div class="row"><span class="label">Sở cấp:</span> Sở Giao thông Vận tải TP Hồ Chí Minh</div>
-    <div class="row"><span class="label">Tên đơn vị KDVT:</span> Hợp tác xã vận tải Hoàng Minh</div>
-    <div class="row"><span class="label">Người duyệt cấp phù hiệu:</span> Nguyễn Thị Dạ Thảo</div>
-    <div class="row"><span class="label">Biển số xe:</span> 14H06127</div>
-    <div class="row"><span class="label">Loại phù hiệu:</span> Xe Hợp đồng</div>
-    <div class="row"><span class="label">Ngày hết hạn:</span> 31/12/2025</div>
-    <div class="row">
-        <span class="label">Trạng thái phù hiệu:</span>
+<div class="content">
+    <div class="item"><strong>Số phù hiệu:</strong> HD7925009257</div>
+    <div class="item"><strong>Sở cấp:</strong> Sở Giao thông Vận tải TP Hồ Chí Minh</div>
+    <div class="item"><strong>Tên đơn vị KDVT:</strong> Hợp tác xã vận tải Hoàng Minh</div>
+    <div class="item"><strong>Người duyệt cấp phù hiệu:</strong> Nguyễn Thị Dạ Thảo</div>
+    <div class="item"><strong>Biển số xe:</strong> 14H06127</div>
+    <div class="item"><strong>Loại phù hiệu:</strong> Xe Hợp đồng</div>
+    <div class="item"><strong>Ngày hết hạn:</strong> 31/12/2026</div>
+    <div class="item">
+        <strong>Trạng thái phù hiệu:</strong>
         <span class="status">Hết hiệu lực</span>
     </div>
 </div>
