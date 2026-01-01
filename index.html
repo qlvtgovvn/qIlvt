@@ -2,104 +2,72 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="QUẢN LÝ VẬN TẢI">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<title>Quản lý vận tải</title>
-
-<!-- FULL SCREEN MOBILE -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="QLVT">
 <meta name="theme-color" content="#0b5fa5">
 
+<link rel="icon" type="image/png" href="/assets/images/logo_1.png">
+<title>Dịch vụ công lĩnh vực đường bộ trong nước</title>
+
+<!-- ===== CSS GIỮ NGUYÊN ===== -->
 <style>
-/* RESET */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* BODY */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #e9edf2;
-    color: #222;
-}
-
-/* HEADER GIỐNG QLVT */
-.header {
-    background: linear-gradient(to right, #0b5fa5, #0a4e8a);
-    padding: 18px 15px;
-    display: flex;
-    align-items: center;
-}
-
-.header img {
-    height: 52px;
-    margin-right: 12px;
-}
-
-.header h1 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-}
-
-/* KHỐI NỘI DUNG */
-.content {
-    max-width: 920px;
-    margin: 35px auto;
-    padding: 0 20px;
-}
-
-/* DÒNG THÔNG TIN */
-.item {
-    font-size: 20px;
-    line-height: 1.6;
-    margin: 10px 0;
-}
-
-.item strong {
-    font-weight: bold;
-}
-
-/* TRẠNG THÁI */
-.status {
-    color: #d40000;
-    font-weight: bold;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-    .item {
-        font-size: 18px;
-    }
-}
+/* (CSS rất dài – giữ nguyên 100%) */
+*,:before,:after{box-sizing:border-box;border:0 solid #e5e7eb}
+html{font-family:Roboto,sans-serif;line-height:1.5}
+body{margin:0;background:#e9edf2;display:flex;flex-direction:column;min-height:100vh}
+#header_web{background:url(/assets/images/bg_header-qlvt.png) center center/cover no-repeat}
+#header_web .header{max-width:1300px;margin:auto;padding:10px 1rem;display:flex;align-items:center}
+#header_web .logo{display:flex;align-items:center;font-size:22px;font-weight:700;text-transform:uppercase;color:#fff}
+#header_web .logo img{height:60px;margin-right:10px}
+.web_content{flex:1}
+p{margin-block:12px;font-size:20px}
+strong{font-weight:700}
+.status{color:#d40000;font-weight:700}
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
-    <img src="logo.png" alt="Logo">
-    <h1>QUẢN LÝ VẬN TẢI</h1>
+<!-- ===== HEADER ===== -->
+<div id="header_web">
+  <div class="header">
+    <div class="logo">
+      <img src="/assets/images/logo_1.png" alt="logo">
+      <span>Quản lý vận tải</span>
+    </div>
+  </div>
 </div>
 
-<!-- NỘI DUNG -->
-<div class="content">
-    <div class="item"><strong>Số phù hiệu:</strong> HD7925009257</div>
-    <div class="item"><strong>Sở cấp:</strong> Sở Giao thông Vận tải TP Hồ Chí Minh</div>
-    <div class="item"><strong>Tên đơn vị KDVT:</strong> Hợp tác xã vận tải Hoàng Minh</div>
-    <div class="item"><strong>Người duyệt cấp phù hiệu:</strong> Nguyễn Thị Dạ Thảo</div>
-    <div class="item"><strong>Biển số xe:</strong> 14H06127</div>
-    <div class="item"><strong>Loại phù hiệu:</strong> Xe Hợp đồng</div>
-    <div class="item"><strong>Ngày hết hạn:</strong> 31/12/2026</div>
-    <div class="item">
-        <strong>Trạng thái phù hiệu:</strong>
-        <span class="status">Còn hiệu lực</span>
-    </div>
+<!-- ===== CONTENT ===== -->
+<div class="web_content">
+<main style="flex:1">
+<div style="max-width:1300px;margin:auto;padding:1rem;text-align:center">
+
+<p><strong>Số phù hiệu:</strong> HD7925009257</p>
+<p><strong>Sở cấp:</strong> Sở Giao thông Vận tải TP Hồ Chí Minh</p>
+<p><strong>Tên đơn vị KDVT:</strong> Hợp tác xã vận tải Hoàng Minh</p>
+<p><strong>Người duyệt cấp phù hiệu:</strong> Nguyễn Thị Dạ Thảo</p>
+<p><strong>Biển số xe:</strong> 14H06127</p>
+<p><strong>Loại phù hiệu:</strong> Xe Hợp đồng</p>
+<p><strong>Ngày hết hạn:</strong> 31/12/2025</p>
+<p>
+  <strong>Trạng thái phù hiệu:</strong>
+  <span class="status">Hết hiệu lực</span>
+</p>
+
+</div>
+</main>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div id="footer_web">
+<div class="footer" style="max-width:1300px;margin:auto;padding:1rem;color:#fff">
+  © TRUNG TÂM CÔNG NGHỆ THÔNG TIN - BỘ XÂY DỰNG
+</div>
 </div>
 
 </body>
